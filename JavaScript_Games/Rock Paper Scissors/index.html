@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+<link rel="icon" href="images/bg.jpeg">
+</head>
+<link rel="stylesheet" href="rps.css">
+
+<body>
+    <h1 id="title">Rock Paper Scissors <br> Game</h1>
+    <div id="container">
+        <div id="gameOver" style="display: none;">
+            <h1 id="greet"></h1>
+            <h2 id="resultG"></h2>
+            <button id="restart"><img src="images/restart.png" alt=""></button>
+        </div>
+        <div id="game">
+            <h5>Moves Left: <span id="moves">7</span></h5>
+            <p>Computer</p>
+            <img src="images/rock.png" alt="" id="screenComp" class="screen">
+            <h1>VS</h1>
+            <img src="images/rock.png" alt="" id="screenPlayer" class="screen">
+            <h4 id="result">Start</h4><br>
+            <div id="controls">
+
+                <div id="playerBtns">
+                    <button id="rockBtn" class="playerBtns">Rock</button>
+                    <button id="scisorBtn" class="playerBtns">Scissor</button>
+                    <button id="paperBtn" class="playerBtns">Paper</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div id="score">
+        <span id="scoreComp"><img src="images/computer.png" alt=""></span>
+        <span id="scorePlayer"><img src="images/player.png" alt=""></span>
+    </div>
+
+    <script src="rps.js"></script>
+</body>
+
+</html>
