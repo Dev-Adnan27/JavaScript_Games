@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Game;
+    src: url(../fonts/fun.ttf);
+}
+
+@font-face {
+    font-family: heading;
+    src: url(../fonts/cursive.ttf);
+}
+
+body {
+    background-color: rgb(20, 15, 26);
+    display: grid;
+    place-items: center;
+    color: rgb(110, 110, 110);
+
+}
+
+h1 {
+    font-family: heading;
+    font-size: 140px;
+    color: rgb(170, 135, 205);
+    -webkit-text-stroke: 1px purple;
+
+}
+
+main {
+    font-family: Game;
+    margin-top: 16vh;
+    display: grid;
+    grid-template-columns: repeat(3, 33vw);
+    place-items: center;
+
+}
+
+section {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+}
+
+section div {
+    width: 100px;
+    height: 100px;
+    border: 2px double #9b9696;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 118px;
+}
+
+[data-player="X"],
+#x {
+    color: rgb(221, 132, 132);
+    -webkit-text-stroke: 4px rgba(255, 0, 0, 0.934);
+}
+
+[data-player="O"],
+#o {
+    color: rgb(132, 178, 221);
+    -webkit-text-stroke: 4px rgba(47, 0, 255, 0.934);
+}
+
+section div:nth-child(1) {
+    border-top: none;
+    border-left: none;
+}
+
+section div:nth-child(2) {
+    border-top: none;
+}
+
+section div:nth-child(3) {
+    border-top: none;
+    border-right: none;
+}
+
+section div:nth-child(4) {
+    border-left: none;
+}
+
+section div:nth-child(6) {
+    border-right: none;
+}
+
+section div:nth-child(7) {
+    border-bottom: none;
+    border-left: none;
+
+}
+
+section div:nth-child(8) {
+    border-bottom: none;
+}
+
+section div:nth-child(9) {
+    border-bottom: none;
+    border-right: none;
+}
+
+.Winner {
+    background-color: #9b969633;
+    border: none;
+}
+
+/* Players */
+aside {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+aside h3 {
+    font-size: 150px;
+}
+
+aside p {
+    color: rgb(9, 255, 70);
+    font-size: 100px;
+}
+
+/* newGame Button */
+
+#newGame{
+    width: 300px;
+    height: 40px;
+    margin-top: 100px;
+    padding-top: 5px;
+    font-size: 40px;
+    font-family: Game;
+    color: rgb(48, 4, 92);
+    background-color: rgb(109, 68, 150);
+    border: 2px solid rgb(170, 135, 205);
+}
+
+
+@media screen and (max-width:650px) {
+    h1 {
+        font-size: 80px;
+    }
+    main {
+        margin-top: 2px;
+        display: grid;
+        grid-template-columns: repeat(2, 33vw);
+        place-items: center;
+
+    }
+    #o-side{
+        order: 2;
+    }
+    section{
+        order: 3;
+        width: 50%;
+        margin-top: 20px;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    #newGame{
+        margin-top: 50px;
+    }
+
+}

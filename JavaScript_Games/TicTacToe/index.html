@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpor
+    t" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+</head>
+<link rel="stylesheet" href="tictactoe.css">
+<body>
+    <h1>Tic Tac Toe</h1>
+    <main>
+        <aside>
+            <h3 id="x">X</h3>
+            <h2 id="x-turn">YOUR TURN</h2>
+            <h3></h3>
+            <p id="x-wins"></p>
+        </aside>
+    <section>
+        <div class="playBox" id="d1" data-player="none" onclick="play(this)"></div>
+        <div class="playBox" id="d2" data-player="none" onclick="play(this)"></div>
+        <div class="playBox" id="d3" data-player="none" onclick="play(this)"></div>
+        <div class="playBox" id="d4" data-player="none" onclick="play(this)"></div>
+        <div class="playBox" id="d5" data-player="none" onclick="play(this)"></div>
+        <div class="playBox" id="d6" data-player="none" onclick="play(this)"></div>
+        <div class="playBox" id="d7" data-player="none" onclick="play(this)"></div>
+        <div class="playBox" id="d8" data-player="none" onclick="play(this)"></div>
+        <div class="playBox" id="d9" data-player="none" onclick="play(this)"></div>
+    </section>
+<aside id="o-side">
+    <h3 id="o">O</h3>
+    <h2 id="o-turn" style="display: none;">YOUR TURN</h2>
+    <p id="o-wins"></p>
+</aside>
+</main>
+<button id="newGame" onclick="newGame();">NEW GAME</button>
+<script src="tictactoe.js"></script>
+</body>
+
+</html>

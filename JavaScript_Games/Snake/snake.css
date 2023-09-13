@@ -1,0 +1,269 @@
+@font-face {
+    font-family: Game;
+    src: url(../fonts/DragonHunter.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Game;
+    color: #092612;
+}
+body {
+    line-height: 1;
+    background-image: url(images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Grid */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 25px;
+    text-align: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin-bottom: 15px;
+}
+
+#gameBoard,
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#gameBoard {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    border: 10px groove rgb(63, 61, 61);
+    box-sizing: content-box;
+    background: rgb(110, 179, 6);
+}
+
+.gameOverGrid {
+    margin: auto;
+}
+
+/* Game */
+.pixel {
+    width: 15px;
+    height: 15px;
+    box-sizing: border-box;
+}
+
+.snakePixel {
+    background: repeating-linear-gradient(45deg,
+            #000000,
+            bisque 10px,
+            black 10px,
+            bisque 20px);
+    border-radius: 25%;
+}
+
+.foodPixel {
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+}
+
+#gameOver {
+    color: rgb(255, 0, 0);
+    display: none;
+}
+
+.pixel:last-child {
+    border-right: none;
+}
+
+.row:last-child .pixel {
+    border-bottom: none;
+}
+
+/* Style */
+.btn {
+    background: #ff0000;
+    background-image: -webkit-linear-gradient(top, rgb(147, 35, 35), rgb(121, 4, 4));
+    background-image: -moz-linear-gradient(top, rgb(147, 35, 35), rgb(121, 4, 4));
+    background-image: -ms-linear-gradient(top, rgb(147, 35, 35), rgb(121, 4, 4));
+    background-image: -o-linear-gradient(top, rgb(147, 35, 35), rgb(121, 4, 4));
+    background-image: linear-gradient(to bottom, rgb(147, 35, 35), rgb(121, 4, 4));
+    -webkit-border-radius: 6;
+    -moz-border-radius: 6;
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: 0;
+}
+
+.btn:hover {
+    background: #ff0000;
+    background-image: -webkit-linear-gradient(top, #ff0000, #ce0303);
+    background-image: -moz-linear-gradient(top, #ff0000, #ce0303);
+    background-image: -ms-linear-gradient(top, #ff0000, #ce0303);
+    background-image: -o-linear-gradient(top, #ff0000, #ce0303);
+    background-image: linear-gradient(to bottom, #ff0000, #ce0303);
+    text-decoration: none;
+}
+
+/* Typog */
+/*! Typebase.less v0.1.0 | MIT License */
+/* Setup */
+html {
+    /* Change default typefaces here */
+
+    font-size: 137.5%;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Copy & Lists */
+p {
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+ul li,
+ol li {
+    line-height: 1.5rem;
+}
+
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+blockquote {
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* Change heading typefaces here */
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    line-height: 1.5rem;
+
+}
+
+h1 {
+    font-size: 4.242rem;
+    line-height: 4.5rem;
+    margin-top: 3rem;
+}
+
+h2 {
+    font-size: 2.828rem;
+    line-height: 3rem;
+    margin-top: 3rem;
+}
+
+h3 {
+    font-size: 1.414rem;
+}
+
+h4 {
+    font-size: 0.707rem;
+}
+
+h5 {
+    font-size: 0.4713333333333333rem;
+}
+
+h6 {
+    font-size: 0.3535rem;
+}
+
+/* Tables */
+table {
+    margin-top: 1.5rem;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+table td,
+table th {
+    padding: 0;
+    line-height: 33px;
+}
+
+/* Code blocks */
+code {
+    vertical-align: bottom;
+}
+
+/* Leading paragraph text */
+.lead {
+    font-size: 1.414rem;
+}
+
+/* Hug the block above you */
+.hug {
+    margin-top: 0;
+}

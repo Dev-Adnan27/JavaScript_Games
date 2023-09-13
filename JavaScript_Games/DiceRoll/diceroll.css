@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom right, rgb(247, 68, 98), rgb(148, 7, 7)) no-repeat;
+    background-size: 100% 100vh;
+    display: grid;
+    place-items: center;
+
+}
+
+#game {
+    height: 50vh;
+    width: 80vw;
+    margin-top: 21vh;
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.41);
+    backdrop-filter: blur(10.5px);
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#divider {
+    height: 50vh;
+    border-left: 5px dotted rgba(255, 255, 255, 0.2);
+
+}
+
+.player{
+    display: grid;
+    place-items: center;
+}
+
+.roller{
+    margin: 10px;
+    width: 50%;
+    height: 30px;
+    background-color: transparent;
+    border: 2px double black;
+    font-size: large;
+    transition: all 0.5s;
+}
+
+.roller:hover{
+    background-color: black;
+    color: rgb(196, 93, 93);
+
+}
+.dice{
+    margin: 20%;
+    width: 50%;
+}
+
+#resetBtn{
+    margin-top: 5vh;
+    width: 200px;
+    height: 50px;
+    border: 5px ridge rgb(214, 56, 56) ;
+    border-radius: 50% 0 50% 0;
+    background: none;
+font-weight: 900;
+}

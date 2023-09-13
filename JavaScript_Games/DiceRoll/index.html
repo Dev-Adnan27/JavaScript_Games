@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roll Game</title>
+    <link rel="icon" href="images/dice/1.png">
+</head>
+<link rel="stylesheet" href="diceroll.css">
+
+<body>
+    <h1>
+        Dice Roll Game
+    </h1>
+    <div id="game">
+        <div class="player">
+            <h2 id="yourName">You</h2>
+            <img src="images/dice/1.png" alt="" id="diceP1" class="dice">
+            <button onclick="rollDice();" class="roller">ROLL !!!</button>
+            <h3>Score: <span id="scoreP1">0</span></h3>
+        </div>
+        <div id="divider"></div>
+        <div class="player">
+            <h2 id="computer">Computer</h2>
+            <img src="images/dice/1.png" alt="" id="diceP2" class="dice">
+            <button style="visibility: hidden;" class="roller">ROLL !!!</button>
+            <h3>Score: <span id="scoreP2">0</span></h3>
+        </div>
+    </div>
+    <button onclick="resetGame()" id="resetBtn">NEW GAME</button>
+
+    <script src="diceroll.js"></script>
+</body>
+
+</html>

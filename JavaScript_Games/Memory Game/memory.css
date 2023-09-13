@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Game;
+    src: url(../fonts/Samurai.otf);
+}
+
+body {
+    background: linear-gradient(to bottom right, #c9c9c9, #333);
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: Game;
+}
+#winNotif{
+    margin-top: 20px;
+    color: rgb(66, 105, 9);
+}
+#game {
+    margin-top: 15vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 30px;
+    place-items: center;
+
+}
+
+#resetBtn{
+    margin-top: 35px;
+    width: 300px;
+    height: 50px;
+    background: none;
+    border-radius: 50px;
+    border: 3px solid;
+}

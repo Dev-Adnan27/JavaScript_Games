@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Game;
+}
+
+@font-face {
+    font-family: Game;
+    src: url(../fonts/Plaguard.otf);
+}
+body {
+    background: url(images/bg.png);
+    overflow-y: hidden;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    display: grid;
+    place-items: center;
+    margin-bottom: 100px;
+}
+
+
+#currentDifficulty {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+aside {
+    margin-left: 5%;
+}
+
+button {
+    margin-left: 2.5%;
+    margin-bottom: 20px;
+    width: 20%;
+    height: 10vh;
+}
+
+#easy {
+    background-color: aqua;
+    border: 30px ridge blue;
+    color: blue;
+}
+
+#medium {
+    background-color: lightgreen;
+    border: 30px ridge green;
+    color: green;
+}
+
+#hard {
+    background-color: rgb(101, 101, 22);
+    border: 30px ridge yellow;
+    color: yellow;
+}
+
+#expert {
+    background-color: black;
+    border: 30px ridge red;
+    color: red;
+}
+
+main {
+    width: 90%;
+    height: 49vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+
+input::-webkit-inner-spin-button {
+    display: none;
+}
+
+#PlayerNum {
+    margin-left: 25px;
+    background-color: transparent;
+    height: 150px;
+    width: 25%;
+    border: 5px ridge rgb(58, 49, 38);
+    font-size: 100px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+
+#message {
+    font-size: x-large;
+}
+
+#playerGuess {
+    width: 25%;
+    height: 50px;
+    background-color: rgb(12, 125, 55);
+    border: 2px solid rgb(28, 27, 35);
+    font-size: x-large;
+}
+
+#reset {
+    width: 12.5%;
+    height: 50px;
+    background-color: rgb(142, 20, 20);
+    border: 2px solid rgb(28, 27, 35);
+    font-size: x-large;
+}

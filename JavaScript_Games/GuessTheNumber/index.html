@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number Game</title>
+    <link rel="icon" href="images/bg.png">
+</head>
+<link rel="stylesheet" href="guess.css">
+
+<body>
+    <h1>Guess The Number</h1>
+
+    <aside>
+        <h3>Change Difficulty:</h3> <br><br>
+        <button id="easy" onclick="easyMode()">EASY</button>
+        <button id="medium" onclick="medMode()">MEDIUM</button>
+        <button id="hard" onclick="hardMode()">HARD</button>
+        <button id="expert" onclick="expMode()">EXPERT</button> <br>
+        <h3>Score: <span id="score">0</span></h3>
+        <h3 id="currentDifficulty">Current Difficulty: <span id="difficulty">________________</span></h3> <br>
+    </aside>
+    <main>
+        <h2 id="gNum"></h2>
+        <input type="number" maxlength="3" name="number" onfocus="this.value=''" id="PlayerNum" placeholder="0"> <br>
+        <h4 id="message"></h4> <br>
+        <button id="playerGuess">Guess</button>
+        <button id="reset">Reset</button>
+
+
+    </main>
+
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.js"></script>
+<script src="guess.js"></script>
+
+</html>
